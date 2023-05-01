@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signincard.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>OTP Verification</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .outercontainer {
+            background: linear-gradient(-25deg, #e1193e 30%, #262626 70%) no-repeat;
+            padding: 10px;
+            height: 100vh;
+        }
+
+        .outercontainer h1 {
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            padding: 80px 0px;
+        }
+
+        .regformcontainer {
+            box-shadow: 20px 20px 20px 0px;
+            border-radius: 20px;
+            padding: 50px 20px 80px 20px;
+            background: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .regform {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .text-field input {
+            color: black;
+            caret-color: #e1193e;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .submitbtn {
+            background-color: #e1193e;
+            outline: none;
+            border: none;
+            color: white;
+            height: 47px;
+            width: 60%;
+            display: inline;
+            font-size: 16px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 7px 0px black;
+        }
+
+        .alertmsg {
+            visibility: hidden;
+            color: #e1193e;
+            margin: 30px 0px;
+            transition: 0.5s ease-in-out all;
+        }
+
+        .alert {
+            text-align: center;
+            color: #e1193e;
+            padding-bottom: 20px;
+        }
+
+        @media (min-width:425px) {
+            .outercontainer {
+                padding: 40px 5%;
+            }
+
+            .regformcontainer {
+                padding: 30px 10%;
+            }
+        }
+
+        @media (min-width:768px) {
+            .outercontainer {
+                padding: 80px 15%;
+            }
+
+            .regformcontainer {
+                padding-bottom: 3%;
+            }
+
+            .buttons input {
+                width: 20%;
+            }
+        }
+
+        @media (min-width:1024px) {
+            .buttons input {
+                width: 20%;
+            }
+        }
+        .otp{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="outercontainer">
+        <h1>OTP verification</h1>
+        <div class="regformcontainer">
+
+            <form action="otp.php" method="post" class="regform" id="regform">
+                <div class="otp">
+                    <p style="color: limegreen;">&#x2713; OTP sent successfully on your mail</p>
+                </div>
+                <div class="text-field">
+                    <input type="text" value="" onchange="updatevalue(this);" name="otp" required>
+                    <span></span>
+                    <label>Enter the 6 digit otp in your email :- </label>
+                </div>
+                <div class="buttons">
+                    <input class="submitbtn" type="reset" name="" id="" value="Clear">
+                    <input class="submitbtn" type="submit" name="" id="submit" value="Proceed">
+
+                </div>
+            </form>
+
+        </div>
+    </section>
+    <script>
+    </script>
+</body>
+
+</html>
