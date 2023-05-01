@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheet/navbar.css">
+    <link rel="stylesheet" href="./stylesheet/homepage.css">
+    <link rel="stylesheet" href="./stylesheet/responsive.css">
+    <link rel="stylesheet" href="./stylesheet/signincard.css">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <section id="outermostcontainer">
+        <section id="homepage">
+            <div class="moveuparrow" onclick="scrollotop();"><a href="#">
+                    <svg id="arrow-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" />
+                    </svg>
+                </a></div>
+            <header id="head">
+                <div class="container">
+                    <div class="bordertop"></div>
+                    <div class="gymlogo"><a href="#"><svg id="gymlogo" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 640 512">
+                                <path fill="currentColor"
+                                    d="M96 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V224v64V448c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V384H64c-17.7 0-32-14.3-32-32V288c-17.7 0-32-14.3-32-32s14.3-32 32-32V160c0-17.7 14.3-32 32-32H96V64zm448 0v64h32c17.7 0 32 14.3 32 32v64c17.7 0 32 14.3 32 32s-14.3 32-32 32v64c0 17.7-14.3 32-32 32H544v64c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32V288 224 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32zM416 224v64H224V224H416z" />
+                            </svg></a></div>
+                    <div class="subcontainer">
+                        <nav id="navbar" class="navbar">
+                            <ul class="nav-menu">
+                                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">AboutUs</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Membership</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                                <li class="nav-item" id="nav-item-mobile"><a href="html/registrationform.html" class="nav-link">LogIn</a>
+                                </li>
+                            </ul>
+                            <div class="hamburger">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+
+                        </nav>
+                        <div class="navbarsignin" id="navbarsignin" onclick="showsignin();">
+                            <a href="#" onclick="return false">Log In</a>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+            <section id="motivationtext" class="motivationtext">
+                <div id="innermotivationtext" class="innermotivationtext">
+                    <p>Unlock Your Potential</p>
+                    <h1 id="mtext2">Train Your Body<br>One Rep at a Time</h1>
+                    <h1></h1>
+                </div>
+                <div id="signinbutton" class="signinbutton">
+                    <div class="signinbuttoncover">
+                        <a href="html/registrationform.html"><p>Become a Member &nbsp;&rarr; </p></a>
+                    </div>
+                </div>
+            </section>
+
+
+        </section>
+        <section class="cardcontainer" id="cardcontainer">
+            <div class="center" id="card">
+                <h1>Log In</h1>
+                <form action="#" method="#">
+                    <div class="text-field">
+                        <input type="text" value="" onchange="updatevalue(this);" required>
+                        <span></span>
+                        <label>Email</label>
+                    </div>
+                    <div class="text-field">
+                        <input type="password" style="color:white" required>
+                        <span></span>
+                        <label>Password</label>
+                    </div>
+                    <div class="pass">Forgot Password?</div>
+                    <input class="submitbtn" type="submit" name="" id="" value="Sign in">
+                    <div class="signuplink">
+                        <div class="notamember" style="display: inline-block;">Not a Member?</div> <a href="#">Sign
+                            Up</a>
+                    </div>
+                </form>
+                <div class="signincross" id="cross">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+            </div>
+        </section>
+        <section class="homepage2" id="aboutus">
+            <div class="aboutuscontainer">
+                <div class="gyminfoandaboutus" id="imagediv">
+                    <div class="imageandtextcontainer" id="gymaboutuscontainer">
+                        <div class="imagediv"><img id="aboutusimage" class="image" src="./images/about.png" alt="">
+                        </div>
+                        <div class="aboutustextcontainer" id="aboutustext">
+                            <div class="headingtext">
+                                <h2 class="headingtextinner">Infinity Fitness and Wellness Studio</h2>
+                            </div>
+                            <div class="aboususdetailtext">
+                                <p class="aboususdetailtextinner">
+                                    Welcome to Infinity Fitness and Wellness Studio! We are a premier gym located in the
+                                    heart of the city, dedicated to helping our clients achieve their health and fitness
+                                    goals.<br><br>
+
+                                    Our gym is equipped with state-of-the-art facilities, including a wide range of
+                                    cardio and strength training equipment, a dedicated yoga studio, and a spacious
+                                    group fitness area. We offer a variety of classes and training programs designed to
+                                    meet the needs of everyone from beginners to experienced athletes.<br><br>
+
+
+
+
+                                </p>
+                            </div>
+                            <div class="aboutusbutton2"><a href="#">Learn More About Us</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gyminfocontainer" id="gymcontainer">
+                    <div class="infoblock">
+                        <div class="numplus">
+                            <p class="num" id="count1">0</p>
+                        </div>
+                        <div class="numplustext">
+                            <p>Satisfied Customers</p>
+                        </div>
+                    </div>
+                    <div class="infoblock">
+                        <div class="numplus">
+                            <p class="num" id="count4">0</p>
+                        </div>
+                        <div class="numplustext">
+                            <p>Certified Trainers</p>
+                        </div>
+                    </div>
+                    <div class="infoblock">
+                        <div class="numplus">
+                            <p class="num" id="count2">0</p>
+                        </div>
+                        <div class="numplustext">
+                            <p>Best Equipments</p>
+                        </div>
+                    </div>
+                    <div class="infoblock">
+                        <div class="numplus">
+                            <p class="num" id="count3">0</p>
+                        </div>
+                        <div class="numplustext">
+                            <p>Years of Experience</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="service" id="service">
+            <div class="serviceinner" id="serviceinner">
+                <div class="serviceheading" id="serviceheading">
+                    <h1>We offer wide range of services</h1>
+                </div>
+                <div class="servicelist" id="servicelist">
+                    <div class="servicelistitem">
+                        <div class="serviceitemcontainer">
+                            <div class="servicelogo"><img src="./images/trainer.png" alt=""></div>
+                            <div class="serviceitemheading">
+                                <h2>Personal Training</h2>
+                            </div>
+                            <div class="servicedescription">
+                                <p>Through personalized workout plans and nutrition guidance,our personal trainers can
+                                    help
+                                    you
+                                    overcome obstacles, and make sustainable lifestyle changes that lead to long-term
+                                    success.</p>
+                            </div>
+                            <div class="aboutusbutton2"><a href="#">Learn More</a></div>
+                        </div>
+                        <div class="serviceitemcontainer">
+                            <div class="servicelogo"><img src="./images/yoga-xxl.png" alt=""></div>
+                            <div class="serviceitemheading">
+                                <h2>Yoga Classes</h2>
+                            </div>
+                            <div class="servicedescription">
+                                <p>Yoga classes are a great way to improve your mental, and emotional
+                                    wellbeing.Attending
+                                    regular yoga classes can help you build strength, flexibility, and balance, while
+                                    also
+                                    reducing stress.</p>
+                            </div>
+                            <div class="aboutusbutton2"><a href="#">Learn More</a></div>
+                        </div>
+                        <div class="serviceitemcontainer">
+                            <div class="servicelogo"><img src="./images/weightlift-xxl.png" alt=""></div>
+                            <div class="serviceitemheading">
+                                <h2>Weight Loss Programs</h2>
+                            </div>
+                            <div class="servicedescription">
+                                <p>With the support of a qualified weight loss coach or program, you can receive
+                                    personalized
+                                    guidance, motivation, and accountability that can help you overcome obstacles and
+                                    stay
+                                    on
+                                    track.</p>
+
+                            </div>
+                            <div class="aboutusbutton2"><a href="#">Learn More</a></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="promotion" id="promotionid">
+            <div class="promotionimage" id="promotion"><img src="./images/weightloss2.png" alt="#"></div>
+            <div class="promotioninfo" id="promotion1">
+                <div class="promotext">
+                    <h1>Weight Loss &amp; Diet Plans</h1>
+                    <p>Get Personalised weight loss and diet plans created by our team of Certified fitness trainers
+                        which
+                        suit your personal Fitness goal</p>
+                </div>
+                <div class="promotionbtn">
+                    <div class="aboutusbutton2"><a href="#">Learn More</a></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="price" id="priceid">
+            <div class="text">
+                <div class="innerpriceheading"><a href="#">
+                        <h1>Our Membership Plans</h1>
+                    </a></div>
+                <div class="innerpricedescription"></div>
+            </div>
+            <div class="pricecard" id="price">
+                <div class="pricecardinner">
+                    <div class="upperhalf">
+                        <h3>3 Months Membership</h3>
+                        <h1>&#x20b9;5000/-</h1>
+                    </div>
+                    <div class="lowerhalf">
+                        <ul class="membershipbenefit">
+                            <li class="benefitlist">Access to best in class cardio Equipments</li>
+                            <li class="benefitlist">Best in class machines for training</li>
+                            <li class="benefitlist">Yoga and Zumba</li>
+                            <li class="benefitlist">Personalised Fitness program</li>
+                        </ul>
+                        <div class="aboutusbutton2"><a href="#">Become Member</a></div>
+                    </div>
+                </div>
+                <div class="pricecardinner">
+                    <div class="upperhalf">
+                        <h3>6 Months Membership</h3>
+                        <h1>&#x20b9;7000/-</h1>
+                    </div>
+                    <div class="lowerhalf">
+                        <ul class="membershipbenefit">
+                            <li class="benefitlist">All services offered in 3months package</li>
+                            <li class="benefitlist">Nutritional counselling</li>
+                            <li class="benefitlist">Diet counselling</li>
+                            <li class="benefitlist">Access to the Steam room</li>
+                        </ul>
+                        <div class="aboutusbutton2"><a href="#">Become Member</a></div>
+                    </div>
+                </div>
+                <div class="pricecardinner">
+                    <div class="upperhalf">
+                        <h3>12 Months Membership</h3>
+                        <h1>&#x20b9;10000/-</h1>
+                    </div>
+                    <div class="lowerhalf">
+                        <ul class="membershipbenefit">
+                            <li class="benefitlist">All services offered in 3months package</li>
+                            <li class="benefitlist">Quarterly Body Composition Analysis</li>
+                            <li class="benefitlist">Complimentary Personal Training sessions</li>
+                            <li class="benefitlist">Various types of physical tests</li>
+                        </ul>
+                        <div class="aboutusbutton2"><a href="#">Become Member</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bmi" id="bmiid">
+            <div class="bmi-inner">
+                <div class="bmiheading" id="bmihead">
+                    <h1>What's Your Body Mass Index?</h1>
+                </div>
+                <div class="bmiformcontainer" id="bmicontainer">
+                    <form action="#" class="bmiform">
+                        <div class="bmibtn">
+                            <div class="aboutusbutton2" id="standard">Standard</div>
+                            <div class="aboutusbutton2" id="metric">Metric</div>
+                        </div>
+                        <div class="row">
+                            <label>YOUR HEIGHT</label>
+                            <div class="inputcontainer" id="display">
+                                <input type="text" id="feet" placeholder="  Feets" required>
+                                <input id="inches" type="text" placeholder="  Inches">
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <label for="#">YOUR WEIGHT</label>
+                            <div class="inputcontainer">
+                                <input type="text" id="weight" placeholder="  Pounds" required>
+                            </div>
+                        </div>
+                        <div class="row" id="row3">
+                            <div class="aboutusbutton2" id="submit">
+                                <p>Calculate Your Bmi&nbsp;&rarr;</p>
+                            </div>
+                            <div class="bmioutput"><input type="text" id="weight2" placeholder="  Pounds"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer" id="footerid">
+            <div class="footerinner">
+                <div class="footeritem">
+                    <div class="quicklink">
+                        <div class="quicklinkhead">
+                            <h2>Quick Links</h2>
+                        </div>
+                        <ul class="qlinklist">
+                            <li class="qlinkitem"><a href="#">Home</a></li>
+                            <li class="qlinkitem"><a href="#">Membership Enquiry</a></li>
+                            <li class="qlinkitem"><a href="#">Personalised Diet Plan</a></li>
+                            <li class="qlinkitem"><a href="#">Services</a></li>
+                            <li class="qlinkitem"><a href="#">Our Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footeritem">
+                    <div class="newletter">
+                        <div class="quicklinkhead">
+                            <h2>Sign Up to get latest update and offers</h2>
+                        </div>
+                        <form class="footerform" action="#">
+                            <div class="emailinput"><input type="text" placeholder="  E-mail"></div>
+                            <div class="aboutusbutton2"><a href="#">Sign Up</a></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="footeritem" id="footeritem3">
+                    <div class="quicklinkhead">
+                        <h2>Contact Us On</h2>
+                    </div>
+                    <div class="contactusemail">
+                        <ul class="ouremaillist">
+                            <li class="ouremail"><a href="#">anuragsutar33@gmail.com</a></li>
+                            <li class="ouremail"><a href="#">shreyashraut2308@gmail.com</a></li>
+                            <li class="ouremail"><a href="#">adityasale278@gmail.com</a></li>
+                        </ul>
+                        <ul class="ourphonenumber">
+                            <li class="ournumber">+91 9309892977</li>
+                            <li class="ournumber">+91 9373180080</li>
+                            <li class="ournumber">+91 9921867075</li>
+                        </ul>
+                    </div>
+                    <div class="icons">
+                        <ul class="footericonlist">
+                            <li class="footericon"><a href="#"><svg id="fbsvg" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 320 512">
+                                        <path id="icon" fill="currentColor"
+                                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                    </svg></a></li>
+                            <li class="footericon"><a href="#"><svg id="instasvg" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 448 512">
+                                        <path fill="currentColor"
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                    </svg></a></li>
+                            <li class="footericon"><a href="#">
+                                    <svg id="twsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path fill="currentColor"
+                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                    </svg></a>
+                            </li>
+                            <li class="footericon"><a href="#">
+                                    <svg id="gplussvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                        <path fill="currentColor"
+                                            d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footericon"><a href="#">
+                                    <svg id="githubsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                        <path fill="currentColor"
+                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footeritem"></div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- <section class="homepage4" style="height: 100vh;"></section>
+    <script> -->
+
+    </script>
+    <script src="./javascript/bmi.js"></script>
+    <script src="./javascript/carousel.js"></script>
+    <script src="./javascript/scroll.js"></script>
+    <script src="./javascript/hamburger.js"></script>
+    <script src="./javascript/signincard.js"></script>
+    <script src="./javascript/arrow.js"></script>
+    <script src="./logos/fontawesome-free-6.4.0-web/js/all.js"></script>
+</body>
+
+</html>
