@@ -1,0 +1,347 @@
+@media(max-width:1600px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media(max-width:700px) {
+    .gymlogo {
+        display: none;
+    }
+
+    .hamburger {
+        position: fixed;
+        display: block;
+        left: 10px;
+    }
+
+    .navbar.active {
+        background-color: #262626;
+    }
+
+    .motivationtext.active {
+        top: 400px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .container {
+        background-color: transparent;
+    }
+
+    .nav-menu {
+        position: fixed;
+        /* left: -100%;
+        top: 70px; */
+        top: -470px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        background-blend-mode: darken;
+        width: 100%;
+        text-align: center;
+        transition: 0.8s;
+    }
+
+    .nav-item {
+        padding: 30px 0px;
+        width: 100%;
+    }
+
+    .nav-item:active {
+        background-color: grey;
+    }
+
+    .nav-menu.active {
+        top: 0px;
+    }
+
+    /* .container.active{
+        /* background-color: #262626; */
+    */ .contactcontainer {
+        display: none;
+    }
+}
+
+@media(max-width:620px) {
+
+    .center {
+        width: 100%;
+    }
+
+    .center.active {
+        background-color: #262626;
+        position: absolute;
+        top: 53%;
+        left: 51%;
+        width: 320px;
+        z-index: 1;
+        opacity: 1;
+    }
+
+    .innermotivationtext h1 {
+        font-size: 40px;
+    }
+}
+
+@media(max-width:422px) {
+    .motivationtext.active {
+        top: 420px;
+    }
+}
+
+@media(max-width:953px) {
+
+
+    .signincross {
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+
+
+    #nav-item-mobile {
+        display: block;
+    }
+
+    .navbarsignin {
+        display: none;
+    }
+
+    .bordertop {
+        display: none;
+    }
+}
+
+@media(max-width:1320px) {
+    .socialmedialogo {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .service {
+        width: 100%;
+    }
+
+    .servicedescription {
+        padding: 0px 100px;
+        margin-bottom: 20px;
+    }
+
+    .servicesoverview {
+        margin-top: -20%;
+    }
+
+    .servicesoverview {
+        flex-direction: column;
+    }
+
+    .serviceslist {
+        flex-direction: column;
+    }
+
+    .serviceslist p {
+        display: none;
+    }
+}
+
+@media (min-width:768px) {
+    .footeritem .icon{
+        justify-content: left;
+    }
+    #footeritem3{
+        justify-content: left;
+        align-items: flex-start;
+    }
+    .promotionimage{
+        display: block;
+    }
+    header{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .footer .icon{
+        padding-top: 30px;
+    }
+    .footerform {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+    }
+    .footerform .aboutusbutton2{
+        transform: skew(0deg);
+        width: 20%;
+    }
+
+    .footerform .aboutusbutton2 a{
+        transform: skew(0deg);
+    }
+
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .emailinput input{
+        width: 70%;
+    }
+
+    .qlinklist {
+        gap: 15px;
+        list-style: circle;
+    }
+
+    .quicklinkhead {
+        text-align: left;
+    }
+
+    .footerinner {
+        flex-direction: row;
+        gap: 10px;
+        text-align: left;
+        justify-content: space-evenly;
+        padding: 0px 10px;
+    }
+
+    .bmiformcontainer {
+        width: 70%;
+    }
+
+    .gyminfocontainer {
+        margin: 0px 45px;
+    }
+
+    .service {
+        background-size: cover;
+    }
+
+    .servicelistitem {
+        flex-direction: row;
+        gap: 5%;
+        padding-top: 100px;
+    }
+
+    .servicedescription {
+        margin-bottom: 20px;
+    }
+
+    .gyminfocontainer {
+        flex-direction: row;
+        opacity: 0;
+        transform: skewX(-25deg);
+        width: 93%;
+        margin: 0px 0px;
+    }
+
+    .aboutuscontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infoblock {
+        display: flex;
+        width: 25%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 25%;
+        transform: skewX(25deg);
+    }
+
+    .imagediv {
+        transition: all ease-in-out 0.9s;
+        display: block;
+        width: 50%;
+    }
+
+    .aboutustextcontainer {
+        padding: 0px 50px;
+        padding-bottom: 20px;
+        width: 50%;
+    }
+
+    .promotion {
+        flex-direction: row;
+        padding: 0px 0px;
+        background: linear-gradient(-54deg, #262626 40%, #e1193e 60%);
+        padding-top: 50px;
+    }
+
+    .promotionimage img {
+        margin: 0px 0px;
+    }
+
+    .promotext h1 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .promotext p {
+        text-align: center;
+        font-size: 1.7rem;
+    }
+}
+
+
+@media screen and (min-width:570px) {
+    .imageandtextcontainer {
+        flex-direction: row;
+    }
+
+
+
+}
+
+@media (min-width:1024px) {
+    .contactusemail {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .aboususdetailtext {
+        padding-top: 50px;
+        padding-bottom: 100px;
+        margin: 0px 10px;
+    }
+
+    .headingtext {
+        font-size: 1.5rem;
+    }
+
+    .aboutustextcontainer {
+        margin-left: 76px;
+        margin-right: 50px;
+    }
+
+    .pricecard {
+        flex-direction: row;
+        gap: 20px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (min-width:1440px) {
+    .pricecard {
+        gap: 100px;
+    }
+}

@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 00px;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+    transition: 0.8s ease all;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.subcontainer {
+    width: 85%;
+    margin: auto;
+}
+
+.navbar {
+    width: 100%;
+    min-height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.nav-item {
+    margin: 0px auto;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-link {
+    transition: 0.7s ease-in-out color;
+}
+
+.nav-link:hover {
+    color: #e1193e;
+}
+
+.bar {
+    display: block;
+    border-radius: 4px;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0px;
+    transition: all 0.7s ease;
+    background-color: white;
+}
+
+.innermotivationtext {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 85px;
+}
+
+.innermotivationtext h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+    line-height: 1.1;
+}
+
+.innermotivationtext p {
+    color: #e1193e;
+    font-style: italic;
+    line-height: 1.1;
+    text-decoration: underline;
+    margin-left: 0.5%;
+}
+
+.motivationtext {
+    position: relative;
+    top: 300px;
+    width: 95%;
+    margin-right: auto;
+    margin-left: 5%;
+    transition: 0.8s all ease-in;
+}
+
+.motivationtext .signinbutton {
+    background: #e1193e;
+    border: 1px solid #e1193e;
+    color: white;
+    font-style: italic;
+    line-height: 1.1;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.5;
+    cursor: pointer;
+    border-radius: 1px;
+    box-shadow: 0px 24px 36px -11px rgb(0 0 0 / 9%);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 1rem 1.5rem;
+    transition: 0.2s all ease-in;
+
+}
+
+.motivationtext .signinbutton:hover {
+    transform: scale(1.025);
+}
+
+.bgcolor {
+    background-color: #262626;
+    transition: 1s ease background-color;
+}
+
+.motivationtext2 {
+    display: none;
+    position: relative;
+    top: 240px;
+    width: 95%;
+    margin-right: auto;
+    margin-left: 5%;
+    transition: 0.8s top;
+}
+
+.innermotivationtext2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 85px;
+}
+
+.innermotivationtext2 h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+    line-height: 1.1;
+}
+
+.innermotivationtext2 p {
+    color: #e1193e;
+    font-style: italic;
+    line-height: 1.1;
+    text-decoration: underline;
+    margin-left: 0.5%;
+}
+
+.motivationtext2 .signinbutton2 {
+    background: #e1193e !important;
+    border: 1px solid #e1193e !important;
+    color: white;
+    font-style: italic;
+    line-height: 1.1;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.5;
+    cursor: pointer;
+    border-radius: 1px;
+    box-shadow: 0px 24px 36px -11px rgb(0 0 0 / 9%);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 1rem 1.5rem;
+}
+
+.navbarsignin {
+    position: absolute;
+    top: 0px;
+    right: 70px;
+    color: white;
+    font-size: 17px;
+    background-color: #e1193e;
+    padding: 13px 30px;
+    height: 47px;
+    cursor: pointer;
+    /* transition: 0.7s ease background-color; */
+}
+
+.navbarsignin:hover {
+    background-color: #262626;
+    transition: 0.7s ease background-color;
+}
+
+.navbarsignin:hover::after {
+    background-color: #262626;
+    transition: 0.7s ease background-color;
+}
+
+.navbarsignin::after {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: -12px;
+    bottom: 0;
+    content: '';
+    width: 135px;
+    -ms-transform: skew(-25deg);
+    -webkit-transform: skew(-25deg);
+    transform: skew(-25deg);
+    background-color: #e1193e;
+}
+
+.subcontainer {
+    display: flex;
+    align-items: center;
+    height: 47px;
+}
+
+.bordertop {
+    width: 92%;
+    background: linear-gradient(to right, transparent, #e1193e);
+    height: 2px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.socialmedialogo {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 210px;
+}
+
+.logo {
+    background-color: #e1193e;
+    margin: 0px 12px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 0px;
+    padding-top: 3px;
+    /* transition: 0.7s ease background-color; */
+}
+
+
+
+#fbsvg {
+    width: 15px;
+    height: 15px;
+}
+
+#fbsvg path {
+    fill: white;
+}
+
+#instasvg {
+    width: 15px;
+    height: 15px;
+}
+
+#instasvg path {
+    fill: white;
+}
+
+#twsvg {
+    width: 15px;
+    height: 15px;
+}
+
+#twsvg path {
+    fill: white;
+}
+
+#gymlogo {
+    display: none;
+    position: absolute;
+    height: 50px;
+    width: 60px;
+    top: 0px;
+    left: 80px;
+
+}
+
+#gymlogo path {
+    fill: #e1193e;
+}
+
+.moveuparrow {
+    position: fixed;
+    border-radius: 50%;
+    display: block;
+    height: 50px;
+    width: 50px;
+    bottom: 10px;
+    right: 10px;
+    background-color: #e1193e;
+    padding: 8px 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.8s ease all;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.moveuparrow:hover {
+    background-color: #262626;
+}
+
+.moveuparrow.active {
+    bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+#arrow-up path {
+    fill: white;
+}
+
+#nav-item-mobile {
+    display: none;
+}
+
+#location{
+    height: 20px;
+    width: 20px;
+}
+#location path{
+    fill: white;
+}
